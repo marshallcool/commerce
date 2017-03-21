@@ -16,6 +16,9 @@ require("!style-loader!css-loader!sass-loader!../node_modules/bootstrap/scss/boo
 //import 'style.css';
 require("!style-loader!css-loader!sass-loader!./styles/style.css");
 
+require("!style-loader!css-loader!sass-loader!../node_modules/primeng/resources/themes/omega/theme.css");
+require("!style-loader!css-loader!sass-loader!../node_modules/primeng/resources/primeng.min.css");
+
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule }              from './app.module';
 platformBrowserDynamic().bootstrapModule(AppModule);

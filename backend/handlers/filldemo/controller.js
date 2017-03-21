@@ -938,7 +938,8 @@ const demodata= {
                         {dist_fr:1001,  dist_to:2000,   price:30030,    typ:3, weight_fr:201,   weight_to:300},
                         {dist_fr:2001,  dist_to:3000,   price:40044,    typ:4, weight_fr:301,   weight_to:999}
                     ]
-                }
+                },
+                num:0
             }, {
                 title: 'Доставка экспресс почтой EMS',
                 txt: 'Доставка осуществляется в течение 1 дня',
@@ -952,7 +953,8 @@ const demodata= {
                     on:0,
                     typs:[],
                     arr:[]
-                }
+                },
+                num:1
             }, {
                 //Вид доставки-DHL
                 title: 'Доставка экспресс почтой DHL',
@@ -967,7 +969,8 @@ const demodata= {
                     on:0,
                     typs:[],
                     arr:[]
-                }
+                },
+                num:2
             }
         ]
     },

@@ -6,6 +6,7 @@ import { HomeRoutingModule } from './home.routing';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SharedModule } from './../shared/shared.module';
 import { CoreModule } from './../core/core.module';
+import { UiModule } from './../ui/ui.module';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { CoreModule } from './../core/core.module';
     HomeRoutingModule,
     SharedModule,
     CoreModule,
-    NavModule
+    NavModule,
+    UiModule
   ],
   exports: [],
   declarations: [

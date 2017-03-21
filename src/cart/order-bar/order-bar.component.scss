@@ -1,8 +1,8 @@
 .sidebar {
     background: #E3E3E3;
     margin-top: 21px;
-    position: fixed;
-    width: 27%;
+    // position: fixed;
+    width: 100%;
     top: 160px;
     &__title {
         color: #191919;
@@ -59,9 +59,10 @@ span.qty-minus:hover {
 }
 .sidebar__check {
     padding: 3px 20px 20px 20px;
+
     &--btn {
-        width: 100%;
-        background: #cc092f;
+			width: 100%;
+			background: $accent !important;
     }
 }
 .sidebar__shipping {

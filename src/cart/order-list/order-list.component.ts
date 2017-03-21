@@ -11,8 +11,7 @@ declare var require: any;
 
 @Component({
     selector: 'order-list',
-    template: require('./order-list.component.pug').toString(),
-    styleUrls: ['./order-list.component.scss']
+    template: require('./order-list.component.pug').toString()
 })
 
 export class OrdertListComponent {
@@ -22,29 +21,6 @@ export class OrdertListComponent {
     public mail:any;
     public mailData: any = [];
     public model:any;
-    // public model:any = [
-    //     {
-    //         id: 1,
-    //         loading: false,
-    //         name: 'ems',
-    //         price: 0,
-    //         icon: 'mail'
-    //     },
-    //     {
-    //         id: 2,
-    //         loading: false,
-    //         name: 'catering',
-    //         price: 40,
-    //         icon: 'local_shipping'
-    //     },
-    //     {
-    //         id: 3,
-    //         loading: false,
-    //         name: 'air',
-    //         price: 100,
-    //         icon: 'airplanemode_active'
-    //     }
-    // ];
 
     constructor(private router: Router,
         private route: ActivatedRoute,
@@ -55,7 +31,7 @@ export class OrdertListComponent {
         this.cartService.getShipping()
             .subscribe(model => {
                 this.model = model;
-                console.log(this.model);
+                console.log(this.model)
             });
         this.cartService.products$
             .subscribe((products) => {
@@ -94,7 +70,7 @@ export class OrdertListComponent {
         }
         this.mailData = [];
         this.mailData.push(mod);
-        this.cartService.addShipping(this.mailData);
+        // this.cartService.addShipping(this.mailData);
         return mod;
     }
 

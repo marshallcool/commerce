@@ -1,0 +1,14 @@
+.row
+  .col-md-12.carousel__products
+    p-carousel(headerText='Popular Products', [value]='products')
+      template(let-product pTemplate="item")
+        .ui-grid.ui-grid-responsive
+          .ui-grid-row
+            .ui-grid-col-12
+              img(src='https://cdn.shopify.com/s/files/1/0973/1490/products/162-thickbox_default_large.jpg?v=1440727223')
+          .ui-grid-row
+            .ui-grid-col-6 Name
+            .ui-grid-col-6 {{product.title_en}}
+          .ui-grid-row
+            .ui-grid-col-6 Price
+            .ui-grid-col-6 {{product.price}}

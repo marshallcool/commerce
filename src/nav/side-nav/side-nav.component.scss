@@ -55,6 +55,15 @@
   height: 41px !important;
   width: 100%;
 
+  &__title {
+    display: block;
+    color: $text-color;
+    font-size: 11px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   &__list {
     text-align: right;
     float: right;
@@ -206,12 +215,8 @@ a {
   color: #cc092f !important;
 }
 .main-nav__link {
-    font-family: Oswald;
-    font-weight: 500;
-    font-style: normal;
+    font-family: $default-font;
     &:hover {
-      font-family: Oswald;
-      font-weight: 500;
-      font-style: normal;
+      font-family: $default-font;
     }
 }

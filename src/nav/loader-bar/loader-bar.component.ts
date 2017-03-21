@@ -8,7 +8,6 @@ declare var require: any;
 @Component({
   selector: 'loader-bar',
   template: require('./loader-bar.component.pug').toString(),
-  styleUrls: ['./loader-bar.component.scss'],
   animations: [
     trigger('load', [
       state('none', style({

@@ -11,8 +11,7 @@ declare var require: any;
 
 @Component({
     selector: 'cart-list',
-    template: require('./cart-list.component.pug').toString(),
-    styleUrls: ['./cart-list.component.scss']
+    template: require('./cart-list.component.pug').toString()
 })
 
 export class CartListComponent {

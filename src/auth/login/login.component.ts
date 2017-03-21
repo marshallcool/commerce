@@ -10,8 +10,7 @@ declare var require: any;
 
 @Component({
     selector: 'login',
-    template: require('./login.component.pug').toString(),
-    styleUrls: ['./login.component.scss']
+    template: require('./login.component.pug').toString()
 })
 
 export class LoginComponent {

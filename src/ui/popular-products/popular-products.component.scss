@@ -1,0 +1,44 @@
+img {
+  max-width: 100%;
+}
+.carousel__products {
+  padding: 0 !important;
+}
+.ui-widget {
+  font-family: "raleway-ex", sans-serif !important;
+}
+.ui-carousel {
+  border: none !important;
+}
+.ui-carousel .ui-carousel-header {
+  overflow: hidden;
+  padding: .625em;
+  background: $orange;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+  height: 50px;
+}
+.ui-corner-all {
+  border: none !important;
+  border-right: 1px solid $gray !important;
+}
+span.ui-carousel-header-title {
+  margin-right: 626px;
+  color: $white;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+span.ui-carousel-button.ui-carousel-prev-button.fa.fa-arrow-circle-left:before {
+  content: "←" !important;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+span.ui-carousel-button.ui-carousel-next-button.fa.fa-arrow-circle-right:before {
+  content: "→" !important;
+  font-size: 23px;
+  font-weight: bold;
+}

@@ -10,8 +10,7 @@ declare var require: any;
 
 @Component({
     selector: 'products-list',
-    template: require('./products-list.component.pug').toString(),
-    styleUrls: ['./products-list.component.scss']
+    template: require('./products-list.component.pug').toString()
 })
 
 export class ProductsListComponent {
@@ -29,9 +28,7 @@ export class ProductsListComponent {
         private cartService: CartService) {
         this.addProductLoading = false;
         this.productService.getProducts()
-            .subscribe(products => {
-                this.products = products;
-            });
+            .subscribe(products => this.products = products );
         this.cartService.products$
             .subscribe((products) => {
                 this.cart = products;

@@ -11,12 +11,19 @@ side-nav
                     p.text-center.shipping__subtitle shipping
             .row
                 .col-sm-8.shipping__container
-                    .col-sm-4
-                        .choice
-                            .choice__img
-                            .choice__text
-                                p EMS Доставка
-                            .choice__pice
-                                p 100$
+                    .col-sm-12(
+                        *ngFor="let mod of model",
+                        (click)="toogleMail(mod)"
+                      )
+                      .shipping__block
+                        p.choice__title {{ mod.title }}
+                        p.choice__price Цена: 12$
+                        p.choice__time {{ mod.txt }}
+                      .choice-detail(*ngIf="mod.loading")
+                        .choice-detail__logo
+                          img.choice-logo__img(src="{{mod.logo}}")
+                          a.choice-logo__img(href="{{mod.site}}") Site
+                        .shipping-calculator(*ngIf="mod.detls.on === 1")
+                          p ADSASD
                 .col-md-4
                     order-bar

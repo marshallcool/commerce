@@ -1,125 +1,31 @@
-/* fallback */
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v20/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
-}
-@font-face {
-    font-family: 'Hind';
-    src: local('Hind Light'), local('Hind-Light'), url('http://64424.selcdn.ru/webfonts/hind/300.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/hind/300.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Hind';
-    src: local('Hind Regular'), local('Hind-Regular'), url('http://64424.selcdn.ru/webfonts/hind/400.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/hind/400.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Hind';
-    src: local('Hind Medium'), local('Hind-Medium'), url('http://64424.selcdn.ru/webfonts/hind/500.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/hind/500.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Hind';
-    src: local('Hind Semibold'), local('Hind-Semibold'), url('http://64424.selcdn.ru/webfonts/hind/600.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/hind/600.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Hind';
-    src: local('Hind Bold'), local('Hind-Bold'), url('http://64424.selcdn.ru/webfonts/hind/700.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/hind/700.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Oswald';
-    src: local('Oswald Light'), local('Oswald-Light'), url('http://64424.selcdn.ru/webfonts/oswald/300.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/oswald/300.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Oswald';
-    src: local('Oswald Regular'), local('Oswald-Regular'), url('http://64424.selcdn.ru/webfonts/oswald/400.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/oswald/400.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Oswald';
-    src: local('Oswald DemiBold'), local('Oswald-DemiBold'), url('http://64424.selcdn.ru/webfonts/oswald/600.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/oswald/600.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Oswald';
-    src: local('Oswald RegularItalic'), local('Oswald-RegularItalic'), url('http://64424.selcdn.ru/webfonts/oswald/400i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/oswald/400i.woff') format('woff');
-    font-weight: 400;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Oswald';
-    src: local('Oswald MediumItalic'), local('Oswald-MediumItalic'), url('http://64424.selcdn.ru/webfonts/oswald/500i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/oswald/500i.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Oswald';
-    src: local('Oswald ExtraLightItalic'), local('Oswald-ExtraLightItalic'), url('http://64424.selcdn.ru/webfonts/oswald/200i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/oswald/200i.woff') format('woff');
-    font-weight: 200;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Oswald';
-    src: local('Oswald HeavyItalic'), local('Oswald-HeavyItalic'), url('http://64424.selcdn.ru/webfonts/oswald/800i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/oswald/800i.woff') format('woff');
-    font-weight: 800;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Oswald';
-    src: local('Oswald Heavy'), local('Oswald-Heavy'), url('http://64424.selcdn.ru/webfonts/oswald/800.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/oswald/800.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Oswald';
-    src: local('Oswald LightItalic'), local('Oswald-LightItalic'), url('http://64424.selcdn.ru/webfonts/oswald/300i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/oswald/300i.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Oswald';
-    src: local('Oswald Medium'), local('Oswald-Medium'), url('http://64424.selcdn.ru/webfonts/oswald/500.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/oswald/500.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Oswald';
-    src: local('Oswald ExtraLight'), local('Oswald-ExtraLight'), url('http://64424.selcdn.ru/webfonts/oswald/200.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/oswald/200.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Oswald';
-    src: local('Oswald BoldItalic'), local('Oswald-BoldItalic'), url('http://64424.selcdn.ru/webfonts/oswald/700i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/oswald/700i.woff') format('woff');
-    font-weight: 700;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Oswald';
-    src: local('Oswald DemiBoldItalic'), local('Oswald-DemiBoldItalic'), url('http://64424.selcdn.ru/webfonts/oswald/600i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/oswald/600i.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Oswald';
-    src: local('Oswald Bold'), local('Oswald-Bold'), url('http://64424.selcdn.ru/webfonts/oswald/700.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/oswald/700.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
+@import "fonts";
+@import "vars"; //auth
+@import "src/auth/login/login.component";
+@import "src/auth/registration/registration.component"; //cart
+@import "src/cart/cart-list/cart-list.component";
+@import "src/cart/order-bar/order-bar.component";
+@import "src/cart/order-list/order-list.component"; //categories
+@import "src/categories/categories-page/categories-page.component";
+@import "src/categories/category-page/category-page.component";
+@import "src/categories/shared/categories-list.component"; //home
+@import "src/home/home-page/home-page.component"; //nav
+@import "src/nav/side-nav/side-nav.component";
+@import "src/nav/loader-bar/loader-bar.component"; //products
+@import "src/products/product-page/product-page.component";
+@import "src/products/shared/products-list/products-list.component";
+//ui
+@import "src/ui/popular-products/popular-products.component";
+@import "src/ui/slider/slider.component";
+
+strong {
+    font-family: raleway-ex;
 }
 
+body {
+    font-family: $default-font !important;
+    font-size: 16px;
+    line-height: 1.75;
+}
 
 .material-icons {
     font-family: 'Material Icons';
@@ -141,16 +47,13 @@ a.btn-floating.btn-large.halfway-fab.waves-effect.waves-light.red.btn__add {
     position: relative;
 }
 @media (min-width: 1200px) {
-.container {
-    width: 1188px !important;
+    .container {
+        width: 1188px !important;
+    }
 }
-}
-body {
-    font-family: Oswald !important;
-    font-weight: 400;
-}
+
 .fixed-cart {
-  position: absolute;
-  margin-top: 129px;
-  width: 97%;
+    position: absolute;
+    margin-top: 115px;
+    width: 100%;
 }

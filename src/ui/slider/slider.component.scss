@@ -1,0 +1,17 @@
+.carousel-item {
+    transition: transform 1000s ease-in-out;
+}
+.carousel .carousel-item {
+    width: 100% !important;
+    height: 100% !important;
+    position: relative !important;
+}
+.carousel-item.active, .carousel-item-next, .carousel-item-prev {
+    display: flex !important;
+}
+.container-slider {
+  padding: 0 !important;
+}
+.carousel-caption {
+  bottom: 62% !important;
+}

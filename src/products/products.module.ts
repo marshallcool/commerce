@@ -6,14 +6,12 @@ import { ProductService } from './../core/product.service';
 import { CartService } from './../core/cart.service';
 import { ProductsRoutingModule } from './products.routing';
 import { ProductPageComponent } from './product-page/product-page.component';
-import { UiModule } from './../ui/ui.module';
 
 @NgModule({
   imports: [
     CommonModule,
     ProductsRoutingModule,
-    NavModule,
-    UiModule
+    NavModule
   ],
   providers: [
     CartService,

@@ -9,8 +9,7 @@ declare var require:any;
 
 @Component({
     selector: 'product-page',
-    template: require('./product-page.component.pug').toString(),
-    styleUrls: ['./product-page.component.scss']
+    template: require('./product-page.component.pug').toString()
 })
 
 export class ProductPageComponent {

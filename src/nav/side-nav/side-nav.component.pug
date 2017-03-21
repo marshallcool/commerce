@@ -4,7 +4,7 @@ header#header
     .primary-wrapper
         .header-inner
             nav.utility-nav
-                span.h10
+                span.utility-nav__title
                     .html-slot-container SHIPPING ON ALL ORDERS
                 ul.utility-nav__list
                     li.utility-nav__item
@@ -19,8 +19,7 @@ header#header
                             li
                                 a(href='#!') GER
                     li.utility-nav__item
-                        a.utility-nav__link(routerLink="/categories", routerLinkActive="active__utility")
-                            span Store
+                        a.utility-nav__link(routerLink="/categories", routerLinkActive="active__utility") Store
                     li.utility-nav__item
                         a.utility-nav__link(routerLink="/login", routerLinkActive="active__utility", *ngIf="!user") signin
                     li.utility-nav__item

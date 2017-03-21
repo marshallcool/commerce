@@ -7,8 +7,7 @@ declare var require:any;
 
 @Component({
 	selector: 'registration',
-    template:require('./registration.component.pug').toString(),
-    styleUrls: ['./registration.component.scss']
+    template:require('./registration.component.pug').toString()
 })
 
 export class RegistrationComponent {

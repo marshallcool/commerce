@@ -10,8 +10,7 @@ declare var require: any;
 
 @Component({
     selector: 'order-bar',
-    template: require('./order-bar.component.pug').toString(),
-    styleUrls: ['./order-bar.component.scss']
+    template: require('./order-bar.component.pug').toString()
 })
 
 export class OrderBarComponent {

@@ -8,7 +8,6 @@ declare var require: any;
 @Component({
     selector: 'categories-list',
     template: require('./categories-list.component.pug').toString(),
-    styleUrls: ['./categories-list.component.scss'],
     animations: [
         trigger('side', [
             state('inactive', style({

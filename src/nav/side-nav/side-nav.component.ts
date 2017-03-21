@@ -10,7 +10,7 @@ declare var require: any;
 @Component({
     selector: 'side-nav',
     template: require('./side-nav.component.pug').toString(),
-    styleUrls: ['/side-nav.component.scss']
+    // styleUrls: ['/side-nav.component.scss']
 })
 
 export class SideNavComponent implements OnInit{

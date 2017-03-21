@@ -32,7 +32,10 @@ let delvrSchema = new mongoose.Schema({
     logo:String,
 
     //Детальный калькулятор
-    detls:{}
+    detls:{},
+
+    //Номер вывода в списке
+    num:Number
 });
 
 Delvr = mongoose.model('Delvr', delvrSchema);
