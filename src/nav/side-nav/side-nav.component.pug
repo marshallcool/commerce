@@ -1,0 +1,50 @@
+header#header
+    //a.logo-header(href="#")
+    //    img.logo-header__img(src="http://materializecss.com/images/sample-1.jpg")
+    .primary-wrapper
+        .header-inner
+            nav.utility-nav
+                span.h10
+                    .html-slot-container SHIPPING ON ALL ORDERS
+                ul.utility-nav__list
+                    li.utility-nav__item
+                        //a.toggle--regions.utility-nav__link(href="#") +USA
+                        a.dropdown-button.toggle--regions.utility-nav__link(href='#', data-activates='dropdown1') +USA
+                        ul#dropdown1.dropdown-content
+                            li
+                                a(href='#!') Russia
+                            li
+                                a(href='#!') USA
+                            li.divider
+                            li
+                                a(href='#!') GER
+                    li.utility-nav__item
+                        a.utility-nav__link(routerLink="/categories", routerLinkActive="active__utility")
+                            span Store
+                    li.utility-nav__item
+                        a.utility-nav__link(routerLink="/login", routerLinkActive="active__utility", *ngIf="!user") signin
+                    li.utility-nav__item
+                        a.utility-nav__link(routerLink="/registration", routerLinkActive="active__utility", *ngIf="!user") signup
+                    li.utility-nav__item
+                        a.utility-nav__link(*ngIf="user") Hi {{ user[0].fnam }}
+                    li.utility-nav__item
+                        a.utility-nav__link(*ngIf="user", (click)="logout()") Logout
+            nav.main-nav
+                ul.main-nav__list
+                    li.main-nav__item
+                        a.main-nav__link(routerLink="/home", routerLinkActive="active__utility") Главная
+                    li.main-nav__item
+                        a.main-nav__link(routerLink="/about", routerLinkActive="active__utility") О нас
+                    li.main-nav__item
+                        a.main-nav__link(routerLink="/news", routerLinkActive="active__utility") Новости
+                    li.main-nav__item
+                        a.main-nav__link(routerLink="/delivery", routerLinkActive="active__utility") Доставка
+                    li.main-nav__item
+                        a.main-nav__link(routerLink="/jobs", routerLinkActive="active__utility") Наши работы
+                    li.main-nav__item
+                        a.main-nav__link(routerLink="/contacts", routerLinkActive="active__utility") Контакты
+                .auxiliary-nav
+                    .mini-cart
+                        a.toggle--shopping-cart(routerLink="/cart", routerLinkActive="active__utility")
+                            span.mini-cart-label Cart
+                            span.product-count {{ products?.length }}

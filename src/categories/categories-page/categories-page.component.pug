@@ -1,0 +1,15 @@
+side-nav
+.main-content
+    .fixed-cart
+        .container-fluid
+            .row
+                .categories__list
+                    .categories__item(
+                    *ngFor="let category of categories")
+                        h2.categories__title {{ category.nam_en }}
+                        .card
+                            .card-image
+                                img(src='http://materializecss.com/images/sample-1.jpg')
+                                span.card-title Название карточки
+                            .card-action
+                                a([routerLink]="['/categories/', category._id]") Перейти

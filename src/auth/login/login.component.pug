@@ -1,0 +1,15 @@
+.fixed-cart
+  .container
+    .col.s6
+      .row
+        h1(*ngIf="!loading") Incorrect data
+      .row
+        .input-field.col.s12
+          input.validate(type='email', #email)
+          label Email
+      .row
+        .input-field.col.s12
+          input.validate(type='password', #password)
+          label Password
+      button.btn.waves-effect.waves-light((click)="login(email.value, password.value); password.value=''")
+        | Login

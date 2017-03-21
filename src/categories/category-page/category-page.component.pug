@@ -1,0 +1,22 @@
+side-nav
+.main-content
+    .fixed-cart
+        .container-fluid
+            .row
+                .col-md-3
+                    
+                .col-md-9
+                    
+                    .product__list
+                        .product__item(
+                        *ngFor="let product of products"
+                        )
+                            .card-image
+                                img.product__img
+                                a.btn-floating.btn-large.halfway-fab.waves-effect.waves-light.red.btn__add
+                                    span((click)='addToCart(product)') Add to cart
+                            .card-content
+                                p.product__title {{product.prodId.title_en}}
+                                p
+                                    | {{product.prodId.price}}
+                                a.btn.product-btn([routerLink]="['/products/', product.prodId.id]") Review

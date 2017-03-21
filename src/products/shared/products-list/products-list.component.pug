@@ -1,0 +1,25 @@
+.notification(*ngIf="addProductLoading")
+    .notification__container
+        p.notification__text Product Add to Cart
+.product-items
+    .row
+        .product_block.col-md-3.col-xs-6.col-sp-12(*ngFor="let product of products")
+            .item-variant.clearfix.product-block
+                .product-meta
+                    h3.name
+                        a.product-name([routerLink]="['/products/', product.id]") {{product.title_en}}
+                    .content_price.clearfix
+                        span.price.product-price
+                            span.money {{product.price}}
+                    .clearfix
+                .product-image-container.image
+                    a.product_img_link(href="#")
+                        img.replace-2x.img-responsive(src="https://cdn.shopify.com/s/files/1/0973/1490/products/162-thickbox_default_large.jpg?v=1440727223")
+                    .right
+                        .action
+                            .quickview(ngbTooltip='View')
+                                a.quick-view.btn-inverse.btn([routerLink]="['/products/', product.id]")
+                                    i.material-icons.prefix visibility
+                            .cart.addtocart
+                                button.btn.btn-outline-inverse.ajax_addtocart
+                                    span((click)='addToCart(product)') Add to cart

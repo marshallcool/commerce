@@ -1,0 +1,9 @@
+.collection([@side]="roomState")
+    .title_block Categories
+    a.collection-item(
+        [routerLink]="['/categories/', category._id]",
+        *ngFor="let category of categories"
+    )
+        span.new.badge 4
+        | {{ category.nam_en }}
+        span.badge() {{ category.prodCnt }}

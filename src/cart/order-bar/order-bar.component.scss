@@ -1,0 +1,74 @@
+.sidebar {
+    background: #E3E3E3;
+    margin-top: 21px;
+    position: fixed;
+    width: 27%;
+    top: 160px;
+    &__title {
+        color: #191919;
+        letter-spacing: .05rem;
+        padding: 20px;
+        border-bottom: 1px solid #bebebe;
+    }
+}
+.item-price {
+    float: right;
+    width: 18%;
+    font-size: 1.5rem;
+    text-align: right;
+}
+span.qty-plus:hover {
+    cursor: pointer;
+    background: #E1E1E1;
+}
+span.qty-minus:hover {
+    cursor: pointer;
+    background: #E1E1E1;
+}
+.product__remove {
+    text-decoration: underline;
+    font-weight: 700;
+    letter-spacing: .09rem;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.h8 {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.sidebar__subtotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #bebebe;
+    padding-bottom: 3px;
+}
+.sidebar__total {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 3px;
+    &--price {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+.sidebar__check {
+    padding: 3px 20px 20px 20px;
+    &--btn {
+        width: 100%;
+        background: #cc092f;
+    }
+}
+.sidebar__shipping {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #bebebe;
+    padding-bottom: 3px;
+}

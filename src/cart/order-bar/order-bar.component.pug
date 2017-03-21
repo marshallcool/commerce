@@ -1,0 +1,17 @@
+.sidebar
+    .sidebar__title
+        span.h8 Order Summary
+    .sidebar__subtotal
+        p.sidebar__subtotal--text SUBTOTAL (6 ITEMS)
+        p.sidebar__subtotal--price ${{ price }}
+    .sidebar__subtotal(*ngIf="offrs")
+        p.sidebar__subtotal--text SALES
+        p.sidebar__subtotal--price ${{ offrs }}
+    .sidebar__shipping(*ngIf="mailData.length")
+        p.sidebar__shipping--text SHIPPING:
+        p.sidebar__shipping--price ${{ mailData[0].price }}
+    .sidebar__total
+        p.sidebar__total--text ESTIMATED TOTAL
+        p.sidebar__total--price ${{ totalPrice }}
+    .sidebar__check
+        button.sidebar__check--btn.btn((click)="buyItem()") Check Out

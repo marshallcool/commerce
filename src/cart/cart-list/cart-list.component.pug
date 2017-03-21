@@ -1,0 +1,45 @@
+side-nav
+.main-content
+    .fixed-cart
+        .container
+            .row
+                .col-md-12.continue__shop
+                    p.arrow.left
+                    p.back--shop((click)="back()") Continue Shopping
+                .col-md-12
+                    h1.text-center(*ngIf="!cartData.length") NO PRODUCTS
+                .col-md-8(*ngIf="cartData.length")
+                    .cart-box
+                        .cart-box--header
+                            span Your Cart (6)
+                        .product-bowl
+                            ul.product-bowl--header
+                                li Items
+                                li count
+                                li Price
+                            .product-noodle-shipping-container
+                                .product-noodle-shipping(*ngFor="let car of cartData")
+                                    .cart-product-noodle.product-noodle
+                                        .item-info-wrapper
+                                            img(src="https://sits-pod40.demandware.net/dw/image/v2/BBCF_PRD/on/demandware.static/-/Sites-chrome_catalog_master/default/dwc2de27a3/product-images/AP-371/WTNY/5_AP-371_WTNY.jpg?sw=250&sh=250&sm=fit")
+                                            .item-info
+                                                .product-list-item
+                                                    span.h9.dark-text {{ car.title_en || car.prodId.title_en}}
+                                                    span.h10 {{ car.dscr_en || car.prodId.dscr_en }}
+                                                    span.h10 Color
+                                                    span.h10 Size
+                                                    .item-actions
+                                                        p.product__remove((click)='deleteProduct(car)') Remove
+                                        span.h10.item-inventory
+                                            span.h10
+                                                .quantity
+                                                    span.qty-minus
+                                                        a.icon((click)="toogleRemoveCount(car)")
+                                                    span.qty-number
+                                                        input(type="text", value='{{car.count}}')
+                                                    span.qty-plus
+                                                        a.icon((click)="toogleAddCount(car)")
+                                        .item-price
+                                            span.price-total {{ car.price || car.prodId.price}} $
+                .col-md-4(*ngIf="cartData.length")
+                    order-bar

@@ -1,0 +1,51 @@
+.signup__bcg
+.signup
+    #login-page.row
+        .col.s12.z-depth-6.card-panel.signup__panel
+            form.login-form(#registerForm="ngForm", (ngsubmit)='register()', (keyup.enter)='register()')
+                .row
+                    .input-field.col.s12.center
+                        img.responsive-img.valign.profile-image-login.img--test(src='', alt='')
+                        h5.center.login-form-text SignUp Form
+                .row.margin
+                    .input-field.col.s6
+                        i.material-icons.prefix account_circle
+                        input#username.validate.input__signup--color(required='', type='text', name='fnam',
+                                                [(ngModel)]="model.fnam" #fnam="ngModel"
+                                                [ngClass]="{'form-control-danger': !(fnam.valid || fnam.untouched)}")
+                        label(for='username') Username
+                        small.center-align.form-text.text-danger([hidden]='fnam.valid || fnam.untouched')
+                            | Full Name is required
+                    .input-field.col.s6
+                        i.material-icons.prefix email
+                        input#email.validate.input__signup--color(required='', type='email', name='email',
+                                            [(ngModel)] = "model.email" #email="ngModel"
+                                            [ngClass]="{'form-control-danger': !(email.valid || email.untouched)}")
+                        label(for='email') Email
+                        small.center-align.form-text.text-danger([hidden]='email.valid || email.untouched')
+                            | Email is required
+                        small.center-align.form-text.text-danger([hidden]='!errorMail')
+                            | Mail busy
+                .row.margin
+                    .input-field.col.s6
+                        i.material-icons.prefix vpn_key
+                        input#password.validate.input__signup--color(required='', type='password', name='pass',
+                                                [(ngModel)] = "model.pass" #pass="ngModel"
+                                                [ngClass]="{'form-control-danger': !(pass.valid || pass.untouched)}")
+                        label(for='password') Password
+                        small.center-align.form-text.text-danger([hidden]='pass.valid || pass.untouched')
+                            | Password is required
+                    .input-field.col.s6
+                        i.material-icons.prefix vpn_key
+                        input#password2.validate.input__signup--color(required='', type='password', name='pass2',
+                                                [(ngModel)] = "model.pass2" #pass2="ngModel"
+                                                [ngClass]="{'form-control-danger': !(pass2.valid || pass2.untouched)}")
+                        label(for='password') Password
+                        small.center-align.form-text.text-danger([hidden]='pass2.valid || pass2.untouched')
+                            | Re-type Password is required
+                .row
+                    p.col.s12.pass-error([hidden]='!loading') Passwords do not match
+                .row
+                    .input-field.col.s12
+                        a.btn.waves-effect.waves-light.col.s12.btn--signup(type='button', (click)='register()') Register Now
+

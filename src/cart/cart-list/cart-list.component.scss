@@ -1,0 +1,277 @@
+// .card.horizontal {
+//   flex-direction: row;
+//   width: 751px;
+//   height: 100%;
+// }
+// .card.horizontal .card-image {
+//   width: 266px;
+// }
+// .cart {
+
+//   &__price {
+//     margin: 0;
+//     font-size: 21px;
+//   }
+// }
+// button.btn.btn__delete {
+//   background-color: #F44336;
+//   margin: 0 auto;
+// }
+// .card-action {
+//   display: flex;
+//   align-items: center;
+// }
+// .bold {
+//   font-weight: bold;
+//   font-size: 19px;
+//   margin-right: 6px;
+// }
+// .cart__title {
+//   margin: 0;
+//   margin-top: 12px;
+//   font-size: 24px;
+// }
+.cart-box--header {
+    padding: 20px 40px;
+    background-color: #e3e3e3;
+}
+span {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.product-bowl--header {
+    padding: 1rem 4rem;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 27px;
+}
+.product-bowl--header li:nth-child(1) {
+    width: 64%;
+}
+.product-bowl--header li {
+    float: left;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.product-bowl--header li:nth-child(2) {
+    width: 18%;
+}
+.product-bowl--header li:nth-child(3) {
+    width: 18%;
+    text-align: right;
+}
+.product-bowl--header li {
+    text-transform: uppercase;
+}
+.cart-box {
+    border: 1px solid #dcdcdc;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 21px;
+}
+.product-bowl .product-noodle-shipping-container {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.product-bowl .product-noodle-shipping:last-of-type {
+    border-bottom: none;
+}
+.product-bowl .product-noodle-shipping {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.cart-box .product-bowl .product-noodle:first-of-type {
+    border: none;
+    margin-top: 0;
+}
+.cart-box .product-bowl .product-noodle {
+    padding: 3rem 4rem 0;
+    margin-bottom: 3rem;
+}
+.product-noodle .item-info-wrapper {
+    position: relative;
+    float: left;
+    width: 59%;
+    display: flex;
+}
+.cart-box .product-bowl .product-noodle img {
+    width: 116px;
+    height: 116px;
+}
+.product-noodle img {
+    float: left;
+    width: 116px;
+    max-width: none;
+    margin-right: 3rem;
+}
+.cart-box .product-bowl .product-noodle .item-info {
+    width: calc(100% - 116px - 30px);
+    min-height: 136px;
+}
+.product-noodle .item-info {
+    position: relative;
+    float: left;
+    width: calc(100% - $img-width - 30px);
+}
+.cart-box .product-bowl .product-noodle .item-info .h10 {
+    float: left;
+    position: relative;
+    width: 100%;
+    line-height: 0.6rem;
+    letter-spacing: .08rem;
+}
+.cart-box .product-bowl .product-noodle .item-info .item-actions {
+    float: none;
+    position: absolute;
+    width: 100%;
+    top: auto;
+    bottom: .6rem;
+}
+.cart-box .product-bowl .product-noodle .item-info .h10:last-of-type {
+    padding-bottom: 4rem;
+}
+.h10 {
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #191919;
+    letter-spacing: .08rem;
+    line-height: 0.8rem;
+    font-size: 12px;
+    color: #777;
+}
+.fixed-cart {
+    position: absolute;
+    margin-top: 116px;
+    width: 100%;
+    background: #EFEFEF;
+}
+.h9 {
+    margin-bottom: 13px;
+    display: block;
+    font-size: 15px;
+    letter-spacing: .09rem;
+}
+.cart-box .product-bowl .product-noodle .item-inventory {
+    margin-top: .2rem;
+}
+.product-noodle .item-inventory {
+    margin-top: 1rem;
+    float: left;
+    width: 18%;
+}
+.product-noodle .quantity {
+    width: 98px;
+    height: 28px;
+    line-height: 3.1rem;
+}
+.quantity {
+    width: 116px;
+    line-height: 4.2rem;
+    height: 31px;
+    border: 1px solid #bebebe;
+    text-align: center;
+    float: left;
+    margin: 0;
+}
+.quantity .qty-minus {
+    float: left;
+    display: block;
+    height: 100%;
+}
+.quantity .qty-minus, .quantity .qty-plus {
+    text-align: center;
+    width: 2rem;
+}
+.quantity .qty-minus a {
+    background: url('https://www.chromeindustries.com/on/demandware.static/Sites-chrome_na-Site/-/en_US/v1488996859279/images/vectors/minus.svg') center no-repeat;
+    display: block;
+    font-size: 0;
+    height: 100%;
+}
+a {
+    line-height: inherit;
+    outline: 0;
+    color: #191919;
+    transition: all .25s cubic-bezier(.4,.01,.1,1);
+    transition-property: color,opacity,transform;
+}
+.qty-minus:hover {
+    cursor: pointer;
+    background: #E7E7E7;
+}
+.qty-plus:hover {
+    cursor: pointer;
+    background: #E7E7E7;
+}
+.quantity .qty-number input {
+    width: calc(127% - 6rem);
+    line-height: 2.1rem;
+    height: 100%;
+    text-align: center;
+    display: block;
+    float: left;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background: 0 0;
+    color: #777;
+    padding: 0;
+}
+.quantity .qty-plus {
+    float: right;
+    display: block;
+    height: 100%;
+}
+.quantity .qty-minus, .quantity .qty-plus {
+    text-align: center;
+    width: 2rem;
+}
+.quantity .qty-plus a {
+    background: url('https://www.chromeindustries.com/on/demandware.static/Sites-chrome_na-Site/-/en_US/v1488996859279/images/vectors/plus.svg') center no-repeat;
+    display: block;
+    font-size: 0;
+    height: 100%;
+}
+.quantity .qty-minus a, .quantity .qty-plus a {
+    color: #777;
+    vertical-align: top;
+}
+.product-noodle-shipping {
+    border-bottom: 1px solid #DCDCDC;
+}
+.back--shop {
+    margin-top: 42px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: .5px;
+    font-family: akzidenz-grotesk,akzidenz-grotesk,helvetica,sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    line-height: 1.4rem;
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: left center;
+    vertical-align: top;
+    margin: 0;
+}
+.continue__shop {
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+}
+.arrow.left {
+    border: 6px solid transparent;
+    border-right: 10px solid #000;
+    margin: 0;
+    margin-right: 6px;
+}

@@ -1,0 +1,64 @@
+.input__signup {
+  background: none !important;
+  border: none !important;
+  &--color {
+    color: #fff;
+  }
+}
+.signup {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  margin-top: 89px;
+
+  &__panel {
+    background-image: linear-gradient(to bottom left, #4F7470 0%, #495C70 100%);
+    border-radius: 25px !important;
+    border: 1px solid #4B616B;
+  }
+
+  &__bcg {
+    background-image: linear-gradient(to bottom left, #417B66 0%, #354A67 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* IE10+ */
+    background-image: -ms-linear-gradient(top right, #417B66 0%, #354A67 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top right, #417B66 0%, #354A67 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(top right, #417B66 0%, #354A67 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #417B66), color-stop(100, #354A67));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top right, #417B66 0%, #354A67 100%);
+  }
+}
+.img--test {
+  width: 199px;
+  height: 100px !important;
+  background: #333;
+}
+.btn--signup {
+  width: 100% !important;
+  background: #47A278 !important;
+  color: #fff !important;
+}
+.pass-error {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+.text-danger {
+  color: #d9534f !important;
+  font-size: 15px;
+  font-weight: 400;
+}
+.login-form-text {
+  color: #fff;
+}

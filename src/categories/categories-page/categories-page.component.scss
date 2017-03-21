@@ -1,0 +1,21 @@
+.categories {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 28%;
+    margin-right: 44px;
+    min-height: 364px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+  }
+
+  &__title {
+    font-size: 1.56rem;
+  }
+}
